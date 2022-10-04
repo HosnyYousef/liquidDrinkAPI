@@ -18,6 +18,13 @@
 document.getElementById("getButton").addEventListener("click", getDrink)
 document.getElementById("stopButton").addEventListener("click", stop)
 
+
+
+function changeColor(newColor) {
+  const elem = document.getElementById('para');
+  elem.style.color = newColor;
+}
+
 let drinkArray = []
 
 function getDrink() {
@@ -63,4 +70,7 @@ function start() {
 function stop() {
   clearInterval(intervalID);
 }
+
+//cocktail leon youtube
+//https://youtu.be/WcSTeotmJtw?t=9213
 
