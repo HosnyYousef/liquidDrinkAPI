@@ -31,7 +31,7 @@ function getDrink() {
 
   let drink = document.querySelector("input").value
 
-  fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drink}&filter.php?a=Non_Alcoholic`) // Make request to server.
+  fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic${drink}`) // Make request to server.
   .then(res => res.json()) // parse response as JSON // Treat what's coming back as JSON.
   .then(data => { // Pass whatever we get back into "data".
     for(let x = 0; x < data.drinks.length; x++) {
