@@ -38,7 +38,7 @@ function getDrink() {
       drinkArray.push(data.drinks[x])
     }
 
-    console.log(drinkArray)
+    console.table(drinkArray)
 
     document.querySelector("h2").innerText = drinkArray[0].strDrink
     document.querySelector("img").src = drinkArray[0].strDrinkThumb
