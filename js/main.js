@@ -42,7 +42,7 @@ function getDrink() {
 
     document.querySelector("h2").innerText = drinkArray[0].strDrink
     document.querySelector("img").src = drinkArray[0].strDrinkThumb
-    document.querySelector("h3").innerText = drinkArray[0].strInstructions
+    document.querySelector("h3").innerText = drinkArray[0].idDrink
   })
 
   .catch(err => { // If something does wrong, we'll get an error printed to the console.
