@@ -55,7 +55,7 @@ function getDrink() {
 function showDrink() {
   document.querySelector("h2").innerText = drinkArray[i].strDrink
   document.querySelector("img").src = drinkArray[i].strDrinkThumb
-  document.querySelector("h3").innerText = drinkArray[i].strInstructions 
+  document.querySelector("h3").innerText = drinkArray[i].idDrink
   i++
 }
 
